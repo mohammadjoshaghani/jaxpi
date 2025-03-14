@@ -14,7 +14,7 @@ from jaxpi import archs
 from jaxpi.utils import flatten_pytree
 
 from soap_jax import soap  # Install from https://github.com/haydn-jones/SOAP_JAX
-from psgd_jax.kron import kron
+#from psgd_jax.kron import kron
 
 
 class TrainState(train_state.TrainState):
