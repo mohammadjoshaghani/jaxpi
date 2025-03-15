@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+jaxpi.egg-info/
+wandb/
+logs/
+# virtualenv
+pinns/
