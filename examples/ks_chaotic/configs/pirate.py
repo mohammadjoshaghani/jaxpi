@@ -9,12 +9,6 @@ def get_config():
 
     config.mode = "train"
 
-    # Weights & Biases
-    config.wandb = wandb = ml_collections.ConfigDict()
-    wandb.project = "PINN-KS_chaotic"
-    wandb.name = "pirate"
-    wandb.tag = None
-
     # Physics-informed initialization
     config.use_pi_init = True
 
@@ -87,5 +81,11 @@ def get_config():
 
     # Integer for PRNG random seed.
     config.seed = 42
+
+    # Weights & Biases
+    config.wandb = wandb = ml_collections.ConfigDict()
+    wandb.project = "PINN-KS_chaotic"
+    wandb.name = "pirate" +"_" +config.optim.optimizer
+    wandb.tag = None
 
     return config
