@@ -10,5 +10,5 @@
 module load python/3.10
 source ~/pinns/bin/activate
 git checkout pirate
-cd ~/projects/def-jenasanj/mjo/jaxpi/examples/burgers
+cd ~/projects/def-jenasanj/mjo/jaxpi/examples/ks_chaotic
 python main.py
