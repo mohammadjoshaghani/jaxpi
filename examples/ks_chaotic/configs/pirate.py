@@ -52,7 +52,7 @@ def get_config():
     optim.grad_accum_steps = 0
 
     config.training = training = ml_collections.ConfigDict()
-    training.max_steps = 200000
+    training.max_steps = 10000
     training.batch_size = 4096
     training.num_time_windows = 10
 
@@ -79,8 +79,8 @@ def get_config():
 
     # Saving
     config.saving = saving = ml_collections.ConfigDict()
-    saving.save_every_steps = None
-    saving.num_keep_ckpts = 10
+    saving.save_every_steps = 100
+    saving.num_keep_ckpts = 100
 
     # # Input shape for initializing Flax models
     config.input_dim = 2
